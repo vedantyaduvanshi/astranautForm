@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body{
+    background-image: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
+    background-size: cover;
+  }
+
+  #astronaut1{
+    position: absolute;
+    margin: 10% 6.2%;
+    -webkit-animation: action 1.5s infinite  alternate;
+    animation: action 1.5s infinite  alternate;
+    height: 450px;
+    width: 400px;
+  }
+  #astronaut2{
+    position: absolute;
+    margin: 22% 29%;
+    -webkit-animation: action 1.5s infinite  alternate;
+    animation: action2 1.5s infinite  alternate;
+    height: 400px;
+    width: 380px;
+  }
+
+
+
+  @-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  @keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+
+  @-webkit-keyframes action2 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+  }
+  
+  @keyframes action2 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+  }
+
+
+  #MainBox{
+    height: 550px;
+    width: 450px;
+    background-color: white;
+    float: right;
+    margin-right: 100px;
+    margin-top: 130px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  #section1{
+    height: 100px;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri;
+  }
+
+#section2{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid rgb(0, 255, 21); */
+    padding-top: 5px;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+#label1{
+    font-family: Calibri;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#countryOptions{
+    height: 40px;
+    width:  350px;
+    margin-top: -10px;
+    border-radius: 6px;
+}
+
+#label2{
+    font-family: Calibri;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#label3{
+    font-family: Calibri;
+    margin-top: -5px;
+    font-weight: 500;
+}
+
+
+#spaceTravellers{
+    height: 40px;
+    width:  350px;
+    margin-top: -10px;
+    border-radius: 6px;
+}
+
+#emailinput{
+    height: 40px;
+    width:  350px;
+    margin-top: -10px;
+    border-radius: 6px;
+}
+
+#radioboss{
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: -18px;
+    font-family: Calibri;
+}
+
+#label4{
+    font-family: Calibri;
+    font-weight: 500; 
+}
+
+#radioboss input{
+    font-family: Calibri;
+}
+
+form button{
+    height: 45px;
+    width: 160px;
+   margin-top: 20px ;
+   margin-left: 104px;
+   background-color: rgb(255, 85, 0);
+   border-radius: 20px;
+   color: white;
+   border-width: 0;
+   
+}
+
+form button:hover{
+   cursor: pointer;
+   background-color: rgba(255, 85, 0, 0.837);
+}
